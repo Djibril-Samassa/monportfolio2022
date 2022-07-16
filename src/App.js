@@ -1,11 +1,27 @@
-import Accueil from './composants/Accueil_component';
-import './App.css';
+import Welcome from "./composants/Welcome";
+import Header from "./composants/Header";
+import "./App.css";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { useState, createContext } from "react";
+
+export const ModalContext = createContext();
 
 function App() {
+  const [showWelcome, setShowWelcome] = useState(true);
+  const value = {
+    showWelcome: showWelcome,
+    setShowWelcome: setShowWelcome,
+  };
   return (
-    <div className="App">
-      <Accueil/>
-    </div>
+    <ModalContext.Provider value={value}>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={showWelcome ? <Welcome /> : <Header/>} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </ModalContext.Provider>
   );
 }
 

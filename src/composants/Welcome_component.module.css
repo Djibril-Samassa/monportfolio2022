@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Antonio";
+    src: url("../../public/fonts/Antonio-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+  }
+  
+  .accueil_container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .accueil_content{
+    margin-top: 8em;
+    width: 80vw;
+    font-family: "Poopins" ;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accueil_text{
+    font-family: "Poppins";
+    color: #f1f1f1;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .logo{
+    height: 50vh;
+  }
+
+  .wavecontainer{
+    min-width: 10vw;
+    padding-top: 5vh;
+    height: 25vh;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+  }
