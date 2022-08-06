@@ -78,12 +78,30 @@ export default function AccueilPage() {
         <div className={Style.qualites}>
           <div>
             <h2 className={Style.section_title}>Qualités</h2>
+            <div>
+              <ul className={Style.qualities}>
+                <li>Ambitieux</li>
+                <li>Créatif</li>
+                <li>Productif</li>
+              </ul>
+            </div>
           </div>
           <div>
             <h2 className={Style.section_title}>Defauts</h2>
+            <div>
+              <ul className={Style.qualities}>
+                <li>Productif</li>
+              </ul>
+            </div>
           </div>
           <div>
             <h2 className={Style.section_title}>Mes hobbies</h2>
+            <div className={Style.hobbiesContainer}>
+              <img src="./hobbies/hobbie1.png" />
+              <img src="./hobbies/hobbie2.png" />
+              <img src="./hobbies/hobbie3.png" />
+              <img src="./hobbies/hobbie4.png" />
+            </div>
           </div>
         </div>
       </div>
