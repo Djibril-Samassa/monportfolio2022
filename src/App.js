@@ -1,5 +1,6 @@
 import Welcome from "./composants/Welcome";
 import Header from "./composants/Header";
+import Accueil from "./pages/Accueil.js";
 import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState, createContext } from "react";
@@ -16,8 +17,9 @@ function App() {
     <ModalContext.Provider value={value}>
       <BrowserRouter>
         <div className="App">
+          {showWelcome ? null : <Header />}
           <Routes>
-            <Route path="/" element={showWelcome ? <Welcome /> : <Header/>} />
+            <Route path="/" element={showWelcome ? <Welcome /> : <Accueil />} />
           </Routes>
         </div>
       </BrowserRouter>

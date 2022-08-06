@@ -29,7 +29,7 @@ export default function Accueil() {
                     <br />
                     Je suis Djibril SAMASSA
                   </h1>
-                  <p>Intégrateur Web | Webdesigner | Designer UX/UI</p>
+                  <p>Intégrateur Web | Développeur Frontend | Apprenti Designer UX/UI</p>
                 </div>
                 <img src="images/hello.png" className={Style.logo}/>
               </div>
