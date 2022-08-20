@@ -27,11 +27,9 @@ export default function Header() {
       }}
       className={Style.container}
     >
-      <Link to="/" className={Style.logo}>
-        <motion.h3 variants={variants} whileHover={"logo"}>
-          Djibril SAMASSA
-        </motion.h3>
-      </Link>
+      <motion.h3 variants={variants} whileHover={"logo"} className={Style.logo}>
+        Djibril SAMASSA
+      </motion.h3>
       <ul>
         <Link
           style={{ textDecoration: "none", color: "#f1f1f1" }}
@@ -45,7 +43,9 @@ export default function Header() {
         >
           A propos de moi
         </Link>
-        <li
+        <Link
+          style={{ textDecoration: "none", color: "#f1f1f1" }}
+          to="/experiences"
           className={
             selected === "experiences" ? Style.selectedMenu : Style.notSelected
           }
@@ -54,8 +54,10 @@ export default function Header() {
           }}
         >
           Expériences
-        </li>
-        <li
+        </Link>
+        <Link
+        style={{ textDecoration: "none", color: "#f1f1f1" }}
+          to="/competences"
           className={
             selected === "competences" ? Style.selectedMenu : Style.notSelected
           }
@@ -64,7 +66,7 @@ export default function Header() {
           }}
         >
           Compétences
-        </li>
+        </Link>
         <li
           className={
             selected === "projets" ? Style.selectedMenu : Style.notSelected

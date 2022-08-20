@@ -1,0 +1,97 @@
+{
+  "formations": [
+    {
+      "title": "Développeur web et web mobile – Konexio",
+      "date": "Novembre 2021 - Octobre 2022",
+      "description": "Labellisée Grande École du Numérique et Paris Code, la formation Développeur.euse Web s’inspire des bootcamps de code les plus performants aux Etats-Unis",
+      "competences": [
+        "Développer la partie front-back end d’une application web ou mobile en Javascript",
+        "Intégrer et réaliser des interfaces utilisateur dynamiques et responsives",
+        "Concevoir des bases de données, faire des requêtes, développer des composants d’accès aux données",
+        "Langages utilisés : HTML, CSS, Javascript, Jquery",
+        "Librairie : Bootstrap,",
+        "Frameworks : React JS,Node JS, Express, ",
+        "Bases de données : MongoDB et SQL",
+        "Préparation diplôme Développeur Web RNCP Niveau V (Bac+2)"
+      ]
+    },
+    {
+      "title": "Bac Pro Systèmes Numériques",
+      "date": "Septembre 2017 - Juillet 2021",
+      "description": "Intervenir sur les installations et équipements (matériels et logiciels) entrant dans la constitution de systèmes numériques, dans le domaine de la sûreté et la sécurité des biens et des personnes",
+      "competences": [
+        "préparer et assurer l'installation d’un système de protection",
+        "Analyser le fonctionnement de l’installation actuelle ou de l’équipement en vue de l’intervention",
+        "Faire un bilan sur le système  et recueillir les informations relatives à l’exploitation et aux caractéristiques des matériels de l’installation",
+        "Réaliser l’intégration matérielle ou logicielle d’un équipement",
+        "Effectuer les tests nécessaires à la validation du fonctionnement des équipements",
+        "Préparer le plan d’action puis établir tout ou partie du plan d’implantation et de câblage",
+        "Installer, configurer les éléments du système et vérifier la conformité du fonctionnement",
+        "Communiquer lors de l’intervention, déceler et mettre en évidence les besoins du client"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Développeur Frontend",
+      "date": "Juin 2022 - Actuellement",
+      "company": "Linkinnov",
+      "tasks": [
+        "Ajout de nouvelles fonctionnalités",
+        "Création de nouvelles pages et de nouveaux composant depuis des maquettes",
+        "Recherche et correction de bugs",
+        "Utilisation d'API",
+        "Création de WebServices",
+        "Traduction du site (i18)",
+        "Intégration du backend",
+        "Travail en méthode agile",
+        "Utilisation de Jira Software"
+      ],
+      "website": "https://linkinnov.com/#/"
+    },
+    {
+      "title": "Développeur Frontend",
+      "company": "Tinywork",
+      "date": "Avril 2022",
+      "tasks": [
+        "Creation de la partie front d'un site web",
+        "Intégration des textes depuis du json",
+        "Stylisation du site",
+        "Création de formulaire",
+        "Création de composants visuels",
+        "Création des routes"
+      ],
+      "website": "https://www.tinywork.care/"
+    },
+    {
+      "title": "Animateur périscloaire",
+      "date": "Novembre 2020 - Septembre 2021",
+      "company": "Mairie de Paris 20",
+      "tasks": [
+        "Oragniser et Encadrer les activités pour les enfants",
+        "Assurer la sécurité et le bien être de chaque enfant",
+        "Aider et expliquer aux enfants leurs leçons et devoirs",
+        "Travail en équipe de dizaine d'animateur",
+        "M'adapter aux nouvelles écoles, nouveaux collègues et nouveaux enfants",
+        "Etre à l'écoute des enfants et répondre à leur besoins",
+        "Etre pédagogue",
+        "Esprit d'équipe et de solidarité",
+        "Sens des responsabilités"
+      ]
+    },
+    {
+      "title": "Technicien de maintenance",
+      "date": "Janvier 2019 - Avril 2020",
+      "company": "Eurotech Security",
+      "website": "https://www.nova-ip.fr/",
+      "tasks": [
+        "Faire passer des câbles de l'armoire électrique au composant alimenté",
+        "Participation à la maintenance d'un moteur de volet coulissant",
+        "Changement le moteur d'un portail coulissant",
+        "Participation et réparation un interphone",
+        "Installation de Spots LED dans le plafond",
+        "Installation d'interrupteurs et de prises sur des chantiers"
+      ]
+    }
+  ]
+}
