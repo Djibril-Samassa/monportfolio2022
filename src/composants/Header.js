@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+import { MenuContext } from "../App";
 import { Link } from "react-router-dom";
 import Style from "./Header.module.css";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const [selected, setSelected] = useState("accueil");
   const variants = {
     logo: {
       cursor: "pointer",
@@ -12,6 +13,7 @@ export default function Header() {
       transition: { delay: 0, duration: 0.2 },
     },
   };
+  const menuState = useContext(MenuContext);
 
   return (
     <motion.div
@@ -35,10 +37,12 @@ export default function Header() {
           style={{ textDecoration: "none", color: "#f1f1f1" }}
           to="/"
           className={
-            selected === "accueil" ? Style.selectedMenu : Style.notSelected
+            menuState.selected === "accueil"
+              ? Style.selectedMenu
+              : Style.notSelected
           }
           onClick={() => {
-            setSelected("accueil");
+            menuState.setSelected("accueil");
           }}
         >
           A propos de moi
@@ -47,46 +51,56 @@ export default function Header() {
           style={{ textDecoration: "none", color: "#f1f1f1" }}
           to="/experiences"
           className={
-            selected === "experiences" ? Style.selectedMenu : Style.notSelected
+            menuState.selected === "experiences"
+              ? Style.selectedMenu
+              : Style.notSelected
           }
           onClick={() => {
-            setSelected("experiences");
+            menuState.setSelected("experiences");
           }}
         >
           Expériences
         </Link>
         <Link
-        style={{ textDecoration: "none", color: "#f1f1f1" }}
+          style={{ textDecoration: "none", color: "#f1f1f1" }}
           to="/competences"
           className={
-            selected === "competences" ? Style.selectedMenu : Style.notSelected
+            menuState.selected === "competences"
+              ? Style.selectedMenu
+              : Style.notSelected
           }
           onClick={() => {
-            setSelected("competences");
+            menuState.setSelected("competences");
           }}
         >
           Compétences
         </Link>
         <li
           className={
-            selected === "projets" ? Style.selectedMenu : Style.notSelected
+            menuState.selected === "projets"
+              ? Style.selectedMenu
+              : Style.notSelected
           }
           onClick={() => {
-            setSelected("projets");
+            menuState.setSelected("projets");
           }}
         >
           Projets
         </li>
-        <li
+        <Link
+          style={{ textDecoration: "none", color: "#f1f1f1" }}
+          to="/contact"
           className={
-            selected === "contact" ? Style.selectedMenu : Style.notSelected
+            menuState.selected === "contact"
+              ? Style.selectedMenu
+              : Style.notSelected
           }
           onClick={() => {
-            setSelected("contact");
+            menuState.setSelected("contact");
           }}
         >
           Contact
-        </li>
+        </Link>
       </ul>
     </motion.div>
   );
