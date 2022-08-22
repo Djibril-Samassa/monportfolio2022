@@ -75,7 +75,9 @@ export default function Header() {
         >
           Compétences
         </Link>
-        <li
+        <Link
+          style={{ textDecoration: "none", color: "#f1f1f1" }}
+          to="/projets"
           className={
             menuState.selected === "projets"
               ? Style.selectedMenu
@@ -86,7 +88,7 @@ export default function Header() {
           }}
         >
           Projets
-        </li>
+        </Link>
         <Link
           style={{ textDecoration: "none", color: "#f1f1f1" }}
           to="/contact"

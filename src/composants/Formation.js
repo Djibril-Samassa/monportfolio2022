@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 
 export default function Formation(props) {
   const [showAll, setShowAll] = useState(false);
-  console.log(props);
   const data = props.props;
   return (
     <div

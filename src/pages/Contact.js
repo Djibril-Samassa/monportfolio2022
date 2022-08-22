@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import Projets from "../Projets.json";
 
 export default function Contact() {
   return (
@@ -22,7 +23,12 @@ export default function Contact() {
             />
             Sur LinkedIn
           </h3>
-          <a href="https://www.linkedin.com/in/djibril-samassa/">Cliquez ici</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/djibril-samassa/"
+          >
+            Cliquez ici
+          </a>
         </div>
         <div className="contactLinkContainer">
           <h3>
@@ -46,17 +52,21 @@ export default function Contact() {
       <h1 className="expTitle">
         Vous souhaitez jetez un coup d'oeil sur mon Github ?{" "}
         <a
+          target="_blank"
           href="https://github.com/Djibril-Samassa?tab=repositories"
           style={{ color: "#f1f1f1" }}
         >
           Par ici
         </a>
       </h1>
-     <div style={{display:"flex"}}> <h3 className="expTitle">
-        Merci de votre visite, n'hesitez pas à m'envoyer un message si vous avez
-        des suggestions ou que mon profil vous intéresse 😉
-      </h3>
-      <img src="images/hello.png"/></div>
+      <div style={{ display: "flex" }}>
+        {" "}
+        <h3 className="expTitle">
+          Merci de votre visite, n'hesitez pas à m'envoyer un message si vous
+          avez des suggestions ou que mon profil vous intéresse 😉
+        </h3>
+        <img src="images/hello.png" />
+      </div>
     </div>
   );
 }

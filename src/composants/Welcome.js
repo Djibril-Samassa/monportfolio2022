@@ -19,7 +19,6 @@ export default function Accueil() {
   };
 
   return (<>
-    {console.log(modalState.ShowWelcome)}
           <div className={Style.accueil_container}>
             <Fade left>
               <div className={Style.accueil_content}>
@@ -29,7 +28,7 @@ export default function Accueil() {
                     <br />
                     Je suis Djibril SAMASSA
                   </h1>
-                  <p>Intégrateur Web | Développeur Frontend | Apprenti Designer UX/UI</p>
+                  <p>Intégrateur Web | Développeur Frontend | Apprenti Designer UX/UI (React JS)</p>
                 </div>
                 <img src="images/hello.png" className={Style.logo}/>
               </div>

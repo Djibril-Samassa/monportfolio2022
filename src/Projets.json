@@ -1,0 +1,38 @@
+{
+  "Projets": [
+    {
+      "Titte": "Cuizine avec Bootstrap",
+      "Link": "https://github.com/Djibril-Samassa/projet_cuisine",
+      "Decription": "Création d'un site vitrine en HTML/CSS proposant des restaurants",
+      "imgLink": "./projetsImg/cuizine.png",
+      "Langages": ["html","css","bootstrap"]
+    },
+    {
+      "Titte": "Moovice",
+      "Link": "https://github.com/Djibril-Samassa/Moovice",
+      "Decription": "Récupérer une liste de films depuis une API, et afficher la liste selon des critères, permettre à l'utilisateur d'en ajouter à ses favoris",
+      "imgLink": "./projetsImg/moovice.png",
+      "Langages": ["ReactJs","API","CSS","Node JS"]
+    },
+    {
+      "Titte": "Weather App",
+      "Link": "https://github.com/Djibril-Samassa/Weather-App",
+      "Decription": "Récupérer les informations météorologiques d'une ville que l'uitlisateur à chercher",
+      "imgLink": "./projetsImg/weather.jpg",
+      "Langages": ["ReactJs","API","CSS","Node JS"]
+    },
+    {
+      "Titte": "Rover",
+      "Link": "https://github.com/Djibril-Samassa/Projet-Rover",
+      "Decription": "Coder un Robot en Javascript qui peut être commandé pour avancer, reculer et tourner",
+      "imgLink": "./projetsImg/rover.jpg",
+      "Langages": ["Javascript"]
+    },
+    {
+      "Titte": "Dashboard",
+      "Decription": "Reproduire un dashboard complexe depuis une maquette de Dribble",
+      "imgLink": "./projetsImg/dashboard.jpg",
+      "Langages": ["ReactJs","API","Iconify","CSS"]
+    }
+  ]
+}

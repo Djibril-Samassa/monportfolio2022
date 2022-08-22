@@ -3,7 +3,6 @@ import Aos from "aos";
 import Style from "./Experience.css";
 export default function Experience(props) {
   const data = props.props;
-  console.log(data);
   return (
     <div className="expContainer">
       <h1 className="expTitle">{data.title} </h1>

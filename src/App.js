@@ -3,6 +3,7 @@ import Header from "./composants/Header";
 import Accueil from "./pages/Accueil.js";
 import Experiences from "./pages/Experiences";
 import Competences from "./pages/Competences";
+import Projets from "./pages/Projets";
 import Contact from "./pages/Contact";
 import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -51,6 +52,12 @@ function App() {
                 path="/contact"
                 element={
                   showWelcome ? <Welcome /> : <Contact props={selected} />
+                }
+              />
+              <Route
+                path="/projets"
+                element={
+                  showWelcome ? <Welcome /> : <Projets props={selected} />
                 }
               />
             </Routes>
