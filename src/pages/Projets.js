@@ -1,5 +1,6 @@
 import React from "react";
 import Pays from "../composants/Pays";
+import Ascenseur from "../composants/Ascenseur";
 import { useState } from "react";
 import ProjetComponent from "../composants/Projet";
 import ProjetsList from "../Projets.json";
@@ -50,7 +51,13 @@ export default function Projets() {
           </li>
         )}
       </ul>
-      <div className="skillShowContainer">{selected === "pays" ? <Pays /> : null}</div>
+      <div className="skillShowContainer">
+        {selected === "pays" ? (
+          <Pays />
+        ) : selected === "ascenseur" ? (
+          <Ascenseur />
+        ) : null}
+      </div>
 
       <h3 className="expTitle">Mes projets réalisés</h3>
       <div

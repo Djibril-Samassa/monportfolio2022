@@ -211,7 +211,7 @@
   outline: none;
 }
 
-.paysubmit{
+.paysubmit {
   font-weight: bold;
   border: 0px;
   color: rgba(225, 68, 74);
@@ -226,7 +226,33 @@
   transition-duration: 500ms;
 }
 
-.paysubmit:active{
+.paysubmit:active {
   transform: scale(1.05);
 }
 
+.etagesButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 4em 0;
+  width: 30%;
+}
+
+.etagesButtonContainer > li {
+  list-style: none;
+  padding: 1em 1.5em;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.current {
+  background-color: rgba(85, 26, 37, 1);
+  color: #f1f1f1;
+}
+
+.notcurrent {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: rgba(85, 26, 37, 1);
+}
