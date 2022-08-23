@@ -1,0 +1,138 @@
+.formeContainer {
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chooseContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chooseContainer>div{
+  color: rgba(225, 68, 74);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.carre {
+  margin-bottom: 0.5em;
+  height: 100px;
+  width: 100px;
+  background-color: #f1f1f1;
+  display: inline-block;
+}
+
+.rond {
+  margin-bottom: 0.5em;
+  height: 100px;
+  width: 100px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.triangle {
+  margin-bottom: 0.5em;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 0;
+  border-bottom: 100px solid #f1f1f1;
+}
+
+.validate {
+  margin-right: 1em;
+  background-color: rgba(85, 26, 37, 1);
+  cursor: pointer;
+  padding: 6px 15px;
+  color: #f1f1f1;
+  font-family: "Poppins";
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transform: scale(1);
+  transition-duration: 200;
+}
+
+.validate2 {
+  font-weight: bold;
+  color: rgba(85, 26, 37, 1);
+  cursor: pointer;
+  padding: 6px 15px;
+  background-color: #f1f1f1;
+  font-family: "Poppins";
+  border-radius: 5px;
+  display: inline-block;
+  transform: scale(1);
+  transition-duration: 200;
+}
+
+.validate:hover{
+  transform: scale(1.05);
+}
+
+.colorContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.colorContainer > li {
+  list-style: none;
+  padding: 1em;
+  border-radius: 50%;
+  margin: 0.5em 1 em;
+}
+
+.red {
+  border: 5px solid white;
+  background-color: red;
+}
+
+.blue {
+  border: 5px solid white;
+  background-color: blue;
+}
+
+.green {
+  border: 5px solid white;
+  background-color: green;
+}
+
+.yellow {
+  border: 5px solid white;
+  background-color: yellow;
+}
+
+.purple {
+  border: 5px solid white;
+  background-color: purple;
+}
+
+.brown {
+  border: 5px solid white;
+  background-color: brown;
+}
+
+.orange {
+  border: 5px solid white;
+  background-color: orange;
+}
+
+.pink {
+  border: 5px solid white;
+  background-color: pink;
+}
+
+.white {
+  border: 5px solid white;
+  background-color: white;
+}
+
+.selected {
+  border: 5px solid #62c92b;
+}

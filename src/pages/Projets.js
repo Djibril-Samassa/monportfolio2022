@@ -4,6 +4,7 @@ import Ascenseur from "../composants/Ascenseur";
 import { useState } from "react";
 import ProjetComponent from "../composants/Projet";
 import ProjetsList from "../Projets.json";
+import ColorAndForm from "../composants/ColorAndForm";
 
 export default function Projets() {
   const [selected, setSelected] = useState("pays");
@@ -50,12 +51,26 @@ export default function Projets() {
             Animation
           </li>
         )}
+        {selected === "colorandform" ? (
+          <li className="selectedSkill">Couleur & forme</li>
+        ) : (
+          <li
+            className="unselectedSkill"
+            onClick={() => {
+              setSelected("colorandform");
+            }}
+          >
+            Couleur & forme
+          </li>
+        )}
       </ul>
       <div className="skillShowContainer">
         {selected === "pays" ? (
           <Pays />
         ) : selected === "ascenseur" ? (
           <Ascenseur />
+        ) : selected === "colorandform" ? (
+          <ColorAndForm />
         ) : null}
       </div>
 

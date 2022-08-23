@@ -30,7 +30,7 @@ export default function Experiences() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            margin: "2em auto",
+            margin: "0em auto",
             flexWrap: "wrap",
           }}
         >

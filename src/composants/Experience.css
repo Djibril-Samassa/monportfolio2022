@@ -174,7 +174,7 @@
 .skillcontainer {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  max-width: 30%;
   margin: 4em 0;
 }
 
@@ -193,6 +193,8 @@
 
 .skillShowContainer {
   padding: 2em;
+  width: fit-content;
+  min-width: 30%;
   background-color: rgba(225, 68, 74);
   border-radius: 5px;
 }
@@ -207,7 +209,17 @@
   margin-bottom: 1em;
 }
 
-.paysinput:focus {
+.paysinput2 {
+  color: rgba(85, 26, 37, 1);
+  background-color: #f1f1f1;
+  font-family: "Poppins";
+  width: 15vw;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.paysinput,.paysinput2:focus {
   outline: none;
 }
 
@@ -234,7 +246,6 @@
   display: flex;
   justify-content: space-between;
   margin: 4em 0;
-  width: 30%;
 }
 
 .etagesButtonContainer > li {
@@ -256,3 +267,27 @@
   background-color: #f1f1f1;
   color: rgba(85, 26, 37, 1);
 }
+
+.carre {
+  margin-bottom: 0.5em;
+  height: 100px;
+  width: 100px;
+  background-color: #f1f1f1;
+  display: inline-block;
+}
+
+.rond {
+  margin-bottom: 0.5em;
+  height: 100px;
+  width: 100px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.triangle {
+  margin-bottom: 0.5em;
+  width: 200px;
+  height: 100px;background-color: #f1f1f1;
+}
+

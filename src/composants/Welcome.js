@@ -43,7 +43,7 @@ export default function Accueil() {
               }}
               variants={variants}
               initial={{
-                y: 250,
+                y: 500,
                 overflow: "hidden",
               }}
               animate={{
