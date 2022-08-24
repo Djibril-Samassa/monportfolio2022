@@ -42,3 +42,17 @@
     bottom: 0;
     overflow: hidden;
   }
+
+  @media (max-width : 1050px) {
+    .accueil_content{
+      flex-direction: column;
+    }
+    .logo{
+      display:none ;
+    }
+
+    .accueil_text{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }

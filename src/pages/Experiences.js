@@ -13,11 +13,7 @@ export default function Experiences() {
       </h1>
       <Slide left>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "2em auto 3em",
-          }}
+          className="fmsContainer"
         >
           {data.formations.map((formation) => {
             return <Formation props={formation} />;
@@ -26,14 +22,7 @@ export default function Experiences() {
       </Slide>
       <h1 className="expTitle">Mes Experiences</h1>
       <Slide right>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "0em auto",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="expsContainer">
           {data.experience.map((experience) => {
             return <Experience props={experience} />;
           })}

@@ -7,7 +7,7 @@ export default function Formation(props) {
   const data = props.props;
   return (
     <div
-      className="container"
+      className="formationcontainer"
       style={
         showAll
           ? { position: "relative" }

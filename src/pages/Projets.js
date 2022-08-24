@@ -85,11 +85,7 @@ export default function Projets() {
       <h3 className="expTitle">Mes projets réalisés</h3>
       <Slide right>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-          }}
+          className="projetsrea"
         >
           {ProjetsList.Projets.map((projets) => {
             return <ProjetComponent props={projets} />;

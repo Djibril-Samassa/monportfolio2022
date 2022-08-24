@@ -8,12 +8,7 @@ export default function Contact() {
     <div style={{ margin: "0 auto", width: "90%" }}>
       <h1 className="expTitle">Contactez moi</h1>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "80%",
-          margin: "0 auto",
-        }}
+        className="contactscontainer"
       >
         <motion.div
           initial={{ y: -200 }}

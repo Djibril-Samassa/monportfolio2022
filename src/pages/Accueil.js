@@ -50,7 +50,7 @@ export default function AccueilPage() {
           </div>
         </Slide>
       </div>
-      <Slide left>
+      <Slide right>
         <div className={Style.about2}>
           <div className={Style.apports}>
             <h2 className={Style.section_title}>Ce que je peux apporter</h2>

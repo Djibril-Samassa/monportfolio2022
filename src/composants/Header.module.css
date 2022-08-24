@@ -18,6 +18,7 @@
     width: 40vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -33,4 +34,10 @@
 
 .notSelected{
     cursor: pointer;
+}
+
+@media (max-width:1250px) {
+    .selectedMenu, .notSelected{
+        margin: 1em;
+    }
 }

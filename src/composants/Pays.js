@@ -28,15 +28,10 @@ export default function Pays() {
         justifyContent: "space-between",
       }}
     >
-      <div style={{ width: "30%" }}>
+      <div className="paysproj">
         <h3 className="expTitle">Entrez le nom d'un pays de votre choix</h3>
         <span
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "spaceBetween",
-            width: "20%",
-          }}
+          className="paysbuttons"
         >
           <input
             name="paysinput"

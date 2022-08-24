@@ -1,4 +1,4 @@
-.container {
+.formationcontainer {
   border-radius: 3px;
   padding: 2em;
   width: 42%;
@@ -7,7 +7,7 @@
   font-family: "Poppins";
 }
 
-.container > div > h1,
+.formationcontainer > div > h1,
 .expContainer > h1 {
   font-family: "Roboto";
 }
@@ -91,7 +91,7 @@
 .contactLinkContainer {
   padding: 1em;
   margin: 2em 0;
-  width: 20%;
+  width: 29%;
   border-radius: 5px;
   background-color: rgba(225, 68, 74);
   color: #f1f1f1;
@@ -219,7 +219,8 @@
   margin-bottom: 1em;
 }
 
-.paysinput,.paysinput2:focus {
+.paysinput,
+.paysinput2:focus {
   outline: none;
 }
 
@@ -288,6 +289,115 @@
 .triangle {
   margin-bottom: 0.5em;
   width: 200px;
-  height: 100px;background-color: #f1f1f1;
+  height: 100px;
+  background-color: #f1f1f1;
 }
 
+.expsContainer {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0em auto;
+  flex-wrap: wrap;
+}
+
+.fmsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto 3em;
+}
+
+.projetsrea {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.paysproj {
+  width: 30%;
+}
+
+.paysbuttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: spaceBetween;
+  width: 20%;
+}
+.contactscontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .contactscontainer {
+    flex-direction: column;
+  }
+  .contactLinkContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .expsContainer {
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expContainer {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .fmsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formationcontainer {
+    width: 90%;
+    margin: 1em;
+  }
+
+  .skillcontainer {
+    max-width: 100%;
+  }
+
+  .skillShowContainer {
+    width: 90%;
+    min-width: fit-content;
+  }
+
+  .projetsrea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projetContainer {
+    width: 90%;
+  }
+
+  .paysproj {
+    width: 90%;
+  }
+
+  .paysbuttons {
+    width: 50%;
+  }
+
+  .paysinput,
+  .paysubmit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .skillcontainer {
+    flex-direction: column;
+  }
+
+  .skillcontainer > li {
+    margin: 0.5em 0;
+  }
+}
