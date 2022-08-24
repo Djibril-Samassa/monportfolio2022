@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { MenuContext } from "../App";
+import { motion } from "framer-motion";
 
 export default function Competences() {
   const menuState = useContext(MenuContext);
   return (
     <>
-      <img
+      <motion.img
+        initial={{ y: -1000 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, type: "spring" }}
         src="competencesBannieres.png"
         style={{ width: "70%", margin: "0 auto", display: "flex" }}
       />

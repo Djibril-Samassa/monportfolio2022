@@ -194,7 +194,7 @@
 .skillShowContainer {
   padding: 2em;
   width: fit-content;
-  min-width: 30%;
+  min-width: 40%;
   background-color: rgba(225, 68, 74);
   border-radius: 5px;
 }

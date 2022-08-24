@@ -38,7 +38,7 @@
       "company": "Linkinnov",
       "tasks": [
         "Ajout de nouvelles fonctionnalités",
-        "Création de nouvelles pages et de nouveaux composant depuis des maquettes",
+        "Création de nouvelles pages et de nouveaux composants depuis des maquettes",
         "Recherche et correction de bugs",
         "Utilisation d'API",
         "Création de WebServices",
@@ -54,7 +54,7 @@
       "company": "Tinywork",
       "date": "Avril 2022",
       "tasks": [
-        "Creation de la partie front d'un site web",
+        "Création de la partie front d'un site web",
         "Intégration des textes depuis du json",
         "Stylisation du site",
         "Création de formulaire",

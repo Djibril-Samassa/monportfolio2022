@@ -21,7 +21,7 @@ export default function AccueilPage() {
               J'ai toujours été intéressé par la programmation et la logique
               qu'il y a derrière Après le Bac j'ai poursuivi dans ce domaine et
               de novembre 2021 à avril 2022 j'étais apprenant chez Konexio et
-              j'ai développé une appétence pour la partie front.Actuellement je
+              j'ai développé une appétence pour la partie front. Actuellement je
               suis développeur frontend chez Linkinnov
             </p>
           </div>

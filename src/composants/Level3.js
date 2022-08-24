@@ -12,7 +12,7 @@ export default function Level3(props) {
   }, []);
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <p className="expTitle">Entrez votre nom</p>
+      <p className="expTitle">Entrez du texte</p>
       <input
         value={value}
         className="paysinput2"
