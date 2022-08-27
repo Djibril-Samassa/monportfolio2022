@@ -23,16 +23,17 @@ export default function Pays() {
 
   return (
     <div
+      className="paysProjetContainer"
       style={{
         display: "flex",
         justifyContent: "space-between",
       }}
     >
       <div className="paysproj">
-        <h3 className="expTitle">Entrez le nom d'un pays de votre choix</h3>
-        <span
-          className="paysbuttons"
-        >
+        <h3 className="expTitle paysprojecttitle">
+          Entrez le nom d'un pays de votre choix
+        </h3>
+        <span className="paysbuttons">
           <input
             name="paysinput"
             className="paysinput"
@@ -52,11 +53,7 @@ export default function Pays() {
       </div>
       {country ? (
         <div
-          style={{
-            width: "60%",
-            display: "flex",
-            alignItems: "center",
-          }}
+          className="paysresults"
         >
           <img
             style={{ width: "30%", margin: "0 2em" }}

@@ -6,24 +6,13 @@ export default function Formation(props) {
   const [showAll, setShowAll] = useState(false);
   const data = props.props;
   return (
-    <div
-      className="formationcontainer"
-      style={
-        showAll
-          ? { position: "relative" }
-          : {
-              position: "relative",
-              minHeight: "30vh",
-              height: "fit-content",
-            }
-      }
-    >
+    <div className={showAll ? "formationcontainer showall" : "formationcontainer notshowall"}>
       <div>
         <h1>{data.title}</h1>
         <p>{data.date}</p>
       </div>
       <p>{data.description}</p>
-      <ul style={{marginBottom:'2em'}}>
+      <ul style={{ marginBottom: "2em" }}>
         {showAll
           ? data.competences.map((item) => {
               return <li>{item}</li>;
@@ -45,7 +34,9 @@ export default function Formation(props) {
           setShowAll(!showAll);
         }}
       >
-        <p style={{margin:'0 0.5em'}}>{showAll ? "voir moins" : "voir plus"}</p>
+        <p style={{ margin: "0 0.5em" }}>
+          {showAll ? "voir moins" : "voir plus"}
+        </p>
         {showAll ? (
           <Icon icon="akar-icons:chevron-up" />
         ) : (

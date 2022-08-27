@@ -1,10 +1,16 @@
 .formationcontainer {
+  position: relative;
   border-radius: 3px;
   padding: 2em;
   width: 42%;
   background-color: rgba(225, 68, 74, 0.6);
   color: #f1f1f1;
   font-family: "Poppins";
+}
+
+.notshowall {
+  min-height: 35vh;
+  height: fit-content;
 }
 
 .formationcontainer > div > h1,
@@ -18,7 +24,7 @@
   color: #f1f1f1;
   border-radius: 3px;
   width: 29%;
-  height: 40vh;
+  min-height: 40vh;
   padding: 1em;
   margin: 1em;
   background-color: rgba(85, 26, 37, 0.7);
@@ -224,6 +230,12 @@
   outline: none;
 }
 
+.paysresults {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
 .paysubmit {
   font-weight: bold;
   border: 0px;
@@ -337,7 +349,14 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1500px) {
+  .notshowall {
+    min-height: 40vh;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1800px) {
   .expsContainer {
     padding: 0em;
     display: flex;
@@ -350,6 +369,17 @@
     height: fit-content;
   }
 
+  .projetsrea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projetContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1800px) {
   .fmsContainer {
     flex-direction: column;
     align-items: center;
@@ -361,21 +391,15 @@
   }
 
   .skillcontainer {
-    max-width: 100%;
+    margin: 4em auto;
+    padding: 0;
+    max-width: 90%;
   }
 
   .skillShowContainer {
     width: 90%;
+    margin: 0 auto;
     min-width: fit-content;
-  }
-
-  .projetsrea {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projetContainer {
-    width: 90%;
   }
 
   .paysproj {
@@ -392,12 +416,54 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
   .skillcontainer {
+    width: 100%;
     flex-direction: column;
+    margin: 4em auto;
+    max-width: 100%;
   }
 
   .skillcontainer > li {
     margin: 0.5em 0;
+  }
+
+  .paysProjetContainer {
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .paysbuttons {
+    margin: 0 auto;
+  }
+
+  .paysprojecttitle {
+    text-align: center;
+  }
+
+  .paysresults {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .paysinput{
+    font-size: 1em;
+  }
+
+  .paysubmit {
+    background-color: #fff;
+    font-weight: bold;
+    border: 0px;
+    color: rgba(225, 68, 74);
+    font-family: "Poppins";
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    text-align: center;
+    transform: scale(1);
+    transition-duration: 500ms;
+    font-size: 1em;
   }
 }
