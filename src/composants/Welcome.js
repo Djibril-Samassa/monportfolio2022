@@ -35,12 +35,6 @@ export default function Accueil() {
             </Fade>
             <motion.p
             onClick={ () =>{modalState.setShowWelcome(false)}}
-              style={{
-                backgroundColor: "#f1f1f1",
-                padding: "6px 15px",
-                borderRadius: "5px",
-                fontFamily: "Poppins",
-              }}
               variants={variants}
               initial={{
                 y: 500,
@@ -56,6 +50,7 @@ export default function Accueil() {
                 duration: 2.5,
               }}
               whileHover={"hovering"}
+              className={Style.buttonWelcome}
             >
               Voir mon Portfolio
             </motion.p>

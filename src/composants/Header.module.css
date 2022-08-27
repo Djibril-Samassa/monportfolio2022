@@ -40,4 +40,18 @@
     .selectedMenu, .notSelected{
         margin: 1em;
     }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container>ul{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .logo{
+        font-size: 2em;
+        margin: 0 auto;
+    }
 }

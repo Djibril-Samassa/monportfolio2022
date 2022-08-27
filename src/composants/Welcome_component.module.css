@@ -43,6 +43,13 @@
   overflow: hidden;
 }
 
+.buttonWelcome {
+  background-color: #f1f1f1;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+
 @media (max-width: 1500px) {
   .accueil_content {
     flex-direction: column;
@@ -54,5 +61,14 @@
   .accueil_text {
     text-align: center;
     margin: 0 auto;
+  }
+
+  .buttonWelcome {
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+  
+  p,h3,h1,h2{
+    font-size: 2em;
   }
 }

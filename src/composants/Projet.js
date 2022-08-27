@@ -7,7 +7,7 @@ export default function ProjetComponent(props) {
     <>
       {showImage ? (
         <div className="projetContainer">
-          <img style={{width:'100%'}} src={data.imgLink} />
+          <img style={{ width: "100%" }} src={data.imgLink} />
           <span className="projetsBtn">
             <p
               className="projetButton"
@@ -36,7 +36,7 @@ export default function ProjetComponent(props) {
               </a>
             </span>
           ) : (
-            <span className="projetsBtn">
+            <span style={{ display: "flex", justifyContent: "center" }}>
               <p
                 className="projetButton"
                 onClick={() => {

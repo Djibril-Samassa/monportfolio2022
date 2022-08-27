@@ -331,7 +331,7 @@
 .paysbuttons {
   display: flex;
   flex-direction: column;
-  justify-content: spaceBetween;
+  justify-content: space-between;
   width: 20%;
 }
 .contactscontainer {
@@ -340,7 +340,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
   .contactscontainer {
     flex-direction: column;
   }
@@ -377,6 +377,10 @@
   .projetContainer {
     width: 90%;
   }
+
+  .skillcontainer > li {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 1800px) {
@@ -407,11 +411,13 @@
   }
 
   .paysbuttons {
-    width: 50%;
+    width: 70%;
   }
 
   .paysinput,
   .paysubmit {
+    font-size: 2em;
+    padding: 0.5em 0em;
     width: 100%;
   }
 }
@@ -447,10 +453,6 @@
     justify-content: center;
   }
 
-  .paysinput{
-    font-size: 1em;
-  }
-
   .paysubmit {
     background-color: #fff;
     font-weight: bold;
@@ -464,6 +466,9 @@
     text-align: center;
     transform: scale(1);
     transition-duration: 500ms;
-    font-size: 1em;
+  }
+
+  .projetsBtn {
+    font-size: 2em;
   }
 }
