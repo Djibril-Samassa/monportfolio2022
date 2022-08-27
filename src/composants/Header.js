@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { MenuContext } from "../App";
 import { Link } from "react-router-dom";
@@ -42,6 +42,7 @@ export default function Header() {
               : Style.notSelected
           }
           onClick={() => {
+            localStorage.setItem("page", "accueil");
             menuState.setSelected("accueil");
           }}
         >
@@ -56,6 +57,7 @@ export default function Header() {
               : Style.notSelected
           }
           onClick={() => {
+            localStorage.setItem("page", "experiences");
             menuState.setSelected("experiences");
           }}
         >
@@ -70,6 +72,7 @@ export default function Header() {
               : Style.notSelected
           }
           onClick={() => {
+            localStorage.setItem("page", "competences");
             menuState.setSelected("competences");
           }}
         >
@@ -84,6 +87,7 @@ export default function Header() {
               : Style.notSelected
           }
           onClick={() => {
+            localStorage.setItem("page", "projets");
             menuState.setSelected("projets");
           }}
         >
@@ -98,6 +102,7 @@ export default function Header() {
               : Style.notSelected
           }
           onClick={() => {
+            localStorage.setItem("page", "contact");
             menuState.setSelected("contact");
           }}
         >
