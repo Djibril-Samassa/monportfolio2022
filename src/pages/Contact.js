@@ -2,14 +2,16 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import Projets from "../Projets.json";
+import { useContext } from "react";
+import { MenuContext } from "../App";
 
 export default function Contact() {
+  const menuState = useContext(MenuContext);
+  menuState.setSelected("contact");
   return (
     <div style={{ margin: "0 auto", width: "90%" }}>
       <h1 className="expTitle">Contactez moi</h1>
-      <div
-        className="contactscontainer"
-      >
+      <div className="contactscontainer">
         <motion.div
           initial={{ y: -200 }}
           animate={{ y: 0 }}
@@ -96,8 +98,8 @@ export default function Contact() {
       >
         {" "}
         <h3 className="expTitle">
-          Merci de votre visite, n'hesitez pas à me contacter si vous
-          avez des suggestions ou que mon profil vous intéresse 😉
+          Merci de votre visite, n'hesitez pas à me contacter si vous avez des
+          suggestions ou que mon profil vous intéresse 😉
         </h3>
         {/* <img style={{ width: "20vw" }} src="images/hello.png" /> */}
       </div>

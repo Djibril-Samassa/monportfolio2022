@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Competences() {
   const menuState = useContext(MenuContext);
+  menuState.setSelected("competences");
   return (
     <>
       <motion.img

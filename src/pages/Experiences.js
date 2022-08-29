@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import Formation from "../composants/Formation";
 import Experience from "../composants/Experiences";
 import data from "../Formation.json";
+import { MenuContext } from "../App";
+import { useContext } from "react";
 import { Slide } from "react-reveal";
 import Aos from "aos";
 
 export default function Experiences() {
+  const menuState = useContext(MenuContext);
+  menuState.setSelected("experiences");
   return (
     <div style={{ width: "90%", margin: "0 auto" }}>
       <h1 className="expTitle" style={{ width: "80%" }}>

@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { useState } from "react";
+import { MenuContext } from "../App";
 import Style from "./Accueil.module.css";
 import { Slide } from "react-reveal";
 import Aos from "aos";
@@ -11,6 +12,9 @@ export default function AccueilPage() {
     Aos.init({ duration: 2000 });
   }, []);
   //   div data-aos="fade-down"
+
+  const menuState = useContext(MenuContext);
+  menuState.setSelected("accueil");
   return (
     <div className={Style.container}>
       <div className={Style.about}>
@@ -19,7 +23,7 @@ export default function AccueilPage() {
             <h2>A propos de moi</h2>
             <p>
               J'ai toujours été intéressé par la programmation et la logique
-              qu'il y a derrière   Après le Bac j'ai poursuivi dans ce domaine et
+              qu'il y a derrière Après le Bac j'ai poursuivi dans ce domaine et
               de novembre 2021 à avril 2022 j'étais apprenant chez Konexio et
               j'ai développé une appétence pour la partie front. Actuellement je
               suis développeur frontend chez Linkinnov
@@ -30,11 +34,11 @@ export default function AccueilPage() {
           <div>
             <h2>Pourquoi le design</h2>
             <p>
-              Je suis sensible au côté visible d'un site web et j'accorde
-              énormément d'importance au fait qu'il soit agréable et soigné Je
-              me ressource constamment en regardant et en reproduisant des
-              design, en créant les miens et je suis toujours à la recherche de
-              nouveautées
+              J'ai des compétences en front, et je suis sensible au côté visible
+              d'un site web et j'accorde énormément d'importance au fait qu'il
+              soit agréable et soigné Je me ressource constamment en regardant
+              et en reproduisant des design, en créant les miens et je suis
+              toujours à la recherche de nouveautées
             </p>
           </div>
         </Slide>
@@ -42,10 +46,11 @@ export default function AccueilPage() {
           <div>
             <h2>Mes objectifs</h2>
             <p>
-              Je souhaite prendre le plus de compétences afin de pouvoir être
-              capable de produire mes propres design, bannières, illustrations.
-              Et je souhaite devenir capable de superviser tout le côté design
-              d'un grand projet dans l'optique de devenir designer UX/UI
+              Je souhaite prendre le plus de compétences en front mais aussi en
+              UX/UI afin de pouvoir être capable de produire mes propres design,
+              bannières, illustrations. Et je souhaite devenir capable de
+              superviser tout le côté design d'un grand projet dans l'optique de
+              devenir designer UX/UI
             </p>
           </div>
         </Slide>

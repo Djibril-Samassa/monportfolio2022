@@ -14,7 +14,7 @@ export const ModalContext = createContext();
 export const MenuContext = createContext();
 
 function App() {
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState('accueil');
   const [showWelcome, setShowWelcome] = useState(true);
 
   const value = {
@@ -25,10 +25,6 @@ function App() {
     selected: selected,
     setSelected: setSelected,
   };
-
-  useEffect(()=>{
-    !selected ? !localStorage.page ? setSelected('accueil') : setSelected(localStorage.page) : null
-  },[])
 
   return (
     <ModalContext.Provider value={value}>

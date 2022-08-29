@@ -6,9 +6,13 @@ import ProjetComponent from "../composants/Projet";
 import { Slide } from "react-reveal";
 import ProjetsList from "../Projets.json";
 import ColorAndForm from "../composants/ColorAndForm";
+import { MenuContext } from "../App";
+import { useContext } from "react";
 import Animation from "../composants/Animation";
 
 export default function Projets() {
+  const menuState = useContext(MenuContext);
+  menuState.setSelected("projets");
   const [selected, setSelected] = useState("pays");
   return (
     <div style={{ width: "90%", margin: "0 auto" }}>
@@ -84,9 +88,7 @@ export default function Projets() {
 
       <h3 className="expTitle">Mes projets réalisés</h3>
       <Slide right>
-        <div
-          className="projetsrea"
-        >
+        <div className="projetsrea">
           {ProjetsList.Projets.map((projets) => {
             return <ProjetComponent props={projets} />;
           })}
