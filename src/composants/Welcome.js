@@ -62,28 +62,6 @@ export default function Accueil() {
         >
           Voir mon Portfolio
         </motion.p>
-        <Wave
-          className={Style.wavecontainer}
-          fill="#FF5757"
-          paused={false}
-          options={{
-            height: 50,
-            amplitude: 100,
-            points: 5,
-          }}
-        />
-        <Wave
-          className={Style.wavecontainer}
-          fill="#FF5757"
-          paused={false}
-          opacity="0.50"
-          options={{
-            speed: 0.2,
-            height: 50,
-            amplitude: 100,
-            points: 3,
-          }}
-        />
       </div>
     </>
   );
