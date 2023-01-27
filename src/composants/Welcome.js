@@ -32,8 +32,7 @@ export default function Accueil() {
                 Je suis Djibril SAMASSA
               </h1>
               <p>
-                Intégrateur Web | Développeur Frontend | Apprenti Designer UX/UI
-                (React JS)
+                Développeur frontend en React Js
               </p>
             </div>
             <img src="images/hello.png" className={Style.logo} />
