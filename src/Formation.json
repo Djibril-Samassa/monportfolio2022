@@ -50,6 +50,19 @@
       "website": "https://linkinnov.com/#/"
     },
     {
+      "title": "Développeur Fullstack Junior",
+      "date": "Novembre 2021 - Avril 2022",
+      "company": "Konexio",
+      "tasks": [
+        "Création des composants à l'aide de JSX et des hooks",
+        " Usage de bibliothèques tierces pour ajouter des fonctionnalités",
+        " Gérer les interactions utilisateur à l'aide d'événements",
+        "Travailler avec les API",
+        "Travailler avec les outils de développement comme NPM",
+        "Travaill en équipe"
+      ]
+    },
+    {
       "title": "Développeur Frontend",
       "company": "Tinywork",
       "date": "Avril 2022",

@@ -34,7 +34,15 @@ export default function Accueil() {
               <p>
                 Développeur frontend en React Js
               </p>
+              <p>A la recherche d'un profil</p><nav>
+                <li>Sensible à l'expérience utilisateur et au design
+                </li>
+                <li>
+                  Prêt à relever les défis et à s'impliquer sur le long terme</li>
+                <li>Sérieux, motivé et ayant la notion d'equipe</li>
+              </nav>
             </div>
+
             <img src="images/hello.png" className={Style.logo} />
           </div>
         </Fade>
@@ -59,7 +67,7 @@ export default function Accueil() {
           whileHover={"hovering"}
           className={Style.buttonWelcome}
         >
-          Voir mon Portfolio
+          Découvrez mon Portfolio
         </motion.p>
       </div>
     </>

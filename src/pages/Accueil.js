@@ -25,20 +25,22 @@ export default function AccueilPage() {
               J'ai toujours été intéressé par la programmation et la logique
               qu'il y a derrière Après le Bac j'ai poursuivi dans ce domaine et
               de novembre 2021 à avril 2022 j'étais apprenant chez Konexio et
-              j'ai développé une appétence pour la partie front. Actuellement je
-              suis développeur frontend chez Linkinnov
+              j'ai développé une appétence pour la partie front. Je suis à la recherche
+              d'un poste challengeant qui me permettra de prendre en compétence et aussi en expérience,
+              mon adaptabilité et mon sens du travail d'équipe me garantie que je m'intégrerais rapidement
+              au sein de ma nouvelle équipe.
             </p>
           </div>
         </Slide>
         <Slide bottom>
           <div>
-            <h2>Pourquoi le design</h2>
+            <h2>Mes points forts</h2>
             <p>
-              J'ai des compétences en front, et je suis sensible au côté visible
+              J'ai des compétences en front, aussi bien dans la création de modules et de fonctionnalité que dans celle de composants visuels, je suis sensible au côté visible
               d'un site web et j'accorde énormément d'importance au fait qu'il
-              soit agréable et soigné Je me ressource constamment en regardant
-              et en reproduisant des design, en créant les miens et je suis
-              toujours à la recherche de nouveautées
+              soit agréable et soigné. Mon appétence pour le côté front fait de moi un développeur sensible à l'ux/ui.
+              Je suis
+              toujours à la recherche de nouveautées et à l'affût de nouvelles technologies.
             </p>
           </div>
         </Slide>
@@ -50,7 +52,7 @@ export default function AccueilPage() {
               UX/UI afin de pouvoir être capable de produire mes propres design,
               bannières, illustrations. Et je souhaite devenir capable de
               superviser tout le côté design d'un grand projet dans l'optique de
-              devenir designer UX/UI
+              devenir designer UX/UI tout en me perfectionnant en frontend.
             </p>
           </div>
         </Slide>
@@ -65,8 +67,7 @@ export default function AccueilPage() {
               <img className={Style.apport3} src="./apports/apport3.png" />
             </div>
             <p>
-              De la créativité, de nouvelles fonctionnalités et l'amélioration
-              des existantes, du design et des animations
+              Du soulagement à l'équipe, de la bonne entente, mes compétences et ma joie de vivre
             </p>
           </div>
           <div className={Style.attentes}>
@@ -76,7 +77,7 @@ export default function AccueilPage() {
               <img className={Style.attente2} src="./attentes/attente2.png" />
             </div>
             <p>
-              Des missions qui me feront progresser en design, Participer à
+              Des missions qui me feront progresser , participer à
               l'amélioration du site et à l'évolution de l'entreprise
             </p>
           </div>
@@ -85,8 +86,8 @@ export default function AccueilPage() {
               <h2 className={Style.section_title}>Qualités</h2>
               <div>
                 <ul className={Style.qualities}>
-                  <li>Ambitieux</li>
-                  <li>Créatif</li>
+                  <li>Sens du travail d'équipe</li>
+                  <li>Sérieux et motivé</li>
                   <li>Productif</li>
                 </ul>
               </div>
