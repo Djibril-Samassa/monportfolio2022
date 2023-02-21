@@ -26,11 +26,11 @@ export default function Accueil() {
         <Fade left>
           <div className={Style.accueil_content}>
             <div className={Style.accueil_text}>
-              <h1>
+              <h3>
                 Bonjour,
                 <br />
                 Je suis Djibril SAMASSA
-              </h1>
+              </h3>
               <p>
                 Développeur frontend en React Js
               </p>

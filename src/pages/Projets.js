@@ -9,6 +9,7 @@ import ColorAndForm from "../composants/ColorAndForm";
 import { MenuContext } from "../App";
 import { useContext } from "react";
 import Animation from "../composants/Animation";
+import { Icon } from "@iconify/react";
 
 export default function Projets() {
   const menuState = useContext(MenuContext);
@@ -70,6 +71,14 @@ export default function Projets() {
               Couleur & forme
             </li>
           )}
+          <li className="unselectedSkill link">
+            <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
+            <a href="https://distributeur-by-djibril.netlify.app/" target="_blank">Distributeur</a>
+          </li>
+          <li className="unselectedSkill link">
+            <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
+            <a href="https://quiz-by-djibril.netlify.app/" target="_blank">Quiz</a>
+          </li>
         </ul>
       </Slide>
       <Slide top>

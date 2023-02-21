@@ -20,7 +20,7 @@ export default function AccueilPage() {
       <div className={Style.about}>
         <Slide top>
           <div>
-            <h2>A propos de moi</h2>
+            <h3>A propos de moi</h3>
             <p>
               J'ai toujours été intéressé par la programmation et la logique
               qu'il y a derrière Après le Bac j'ai poursuivi dans ce domaine et
@@ -34,7 +34,7 @@ export default function AccueilPage() {
         </Slide>
         <Slide bottom>
           <div>
-            <h2>Mes points forts</h2>
+            <h3>Mes points forts</h3>
             <p>
               J'ai des compétences en front, aussi bien dans la création de modules et de fonctionnalité que dans celle de composants visuels, je suis sensible au côté visible
               d'un site web et j'accorde énormément d'importance au fait qu'il
@@ -46,7 +46,7 @@ export default function AccueilPage() {
         </Slide>
         <Slide top>
           <div>
-            <h2>Mes objectifs</h2>
+            <h3>Mes objectifs</h3>
             <p>
               Je souhaite prendre le plus de compétences en front mais aussi en
               UX/UI afin de pouvoir être capable de produire mes propres design,

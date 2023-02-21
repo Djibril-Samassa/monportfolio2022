@@ -65,19 +65,13 @@ export default function Contact() {
       <h2 className="expTitle">Préférences</h2>
       <ul style={{ marginBottom: "5em" }} className="expTitle">
         <li>
-          <h3 className="expTitle">Disponibilité immédiate</h3>
+          <p className="expTitle">Disponibilité immédiate</p>
         </li>
         <li>
-          <h3 className="expTitle">Présentiel / Distanciel</h3>
+          <p className="expTitle">Présentiel / Distanciel</p>
         </li>
         <li>
-          <h3 className="expTitle">Temps partiel de préférence</h3>
-        </li>
-        <li>
-          <h3 className="expTitle">Mission souhaitée : Front et Design </h3>
-        </li>
-        <li>
-          <h3 className="expTitle">Prétention salariale : à discuter</h3>
+          <p className="expTitle">Permis B</p>
         </li>
       </ul>
       <h2 className="expTitle">
