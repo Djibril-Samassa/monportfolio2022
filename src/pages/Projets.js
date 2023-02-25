@@ -1,6 +1,5 @@
 import React from "react";
-import Pays from "../composants/Pays";
-import Ascenseur from "../composants/Ascenseur";
+import Pays from "../composants/Pays";  
 import { useState } from "react";
 import ProjetComponent from "../composants/Projet";
 import { Slide } from "react-reveal";
@@ -35,18 +34,6 @@ export default function Projets() {
               Pays
             </li>
           )}
-          {selected === "ascenseur" ? (
-            <li className="selectedSkill">Ascenseur</li>
-          ) : (
-            <li
-              className="unselectedSkill"
-              onClick={() => {
-                setSelected("ascenseur");
-              }}
-            >
-              Ascenseur
-            </li>
-          )}
           {selected === "animation" ? (
             <li className="selectedSkill">Animation</li>
           ) : (
@@ -75,9 +62,14 @@ export default function Projets() {
             <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
             <a href="https://distributeur-by-djibril.netlify.app/" target="_blank">Distributeur</a>
           </li>
+
           <li className="unselectedSkill link">
             <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
             <a href="https://quiz-by-djibril.netlify.app/" target="_blank">Quiz</a>
+          </li>
+          <li className="unselectedSkill link">
+            <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
+            <a href="https://ascenseur-by-djibril.netlify.app/" target="_blank">Ascenseur</a>
           </li>
         </ul>
       </Slide>
@@ -85,8 +77,6 @@ export default function Projets() {
         <div className="skillShowContainer">
           {selected === "pays" ? (
             <Pays />
-          ) : selected === "ascenseur" ? (
-            <Ascenseur />
           ) : selected === "colorandform" ? (
             <ColorAndForm />
           ) : selected === "animation" ? (
