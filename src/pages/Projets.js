@@ -71,6 +71,10 @@ export default function Projets() {
             <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
             <a href="https://ascenseur-by-djibril.netlify.app/" target="_blank">Ascenseur</a>
           </li>
+          <li className="unselectedSkill link">
+            <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
+            <a href="hhttps://meteo-by-djibril.netlify.app/" target="_blank">Météo</a>
+          </li>
         </ul>
       </Slide>
       <Slide top>
