@@ -1,5 +1,5 @@
 import React from "react";
-import Pays from "../composants/Pays";  
+import Pays from "../composants/Pays";
 import { useState } from "react";
 import ProjetComponent from "../composants/Projet";
 import { Slide } from "react-reveal";
@@ -78,6 +78,10 @@ export default function Projets() {
           <li className="unselectedSkill link">
             <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
             <a href="https://e-books-by-djibril.netlify.app/" target="_blank">E-books</a>
+          </li>
+          <li className="unselectedSkill link">
+            <Icon style={{ marginRight: '5px' }} className='iconif' icon="material-symbols:open-in-new" />
+            <a href="https://my-auth-by-djibril.netlify.app/" target="_blank">myOAuth</a>
           </li>
         </ul>
       </Slide>
