@@ -182,7 +182,7 @@
   display: flex;
   justify-content: space-between;
   width: fit-content;
-  margin: 4em 0;
+  margin: 1em 0;
 }
 
 .skillcontainer>li {
@@ -192,6 +192,11 @@
   padding: 5px 16px;
   margin: 0px 5px;
   border-radius: 5px;
+}
+
+.pn{
+  font-family: "Poppins";
+  color: #f1f1f1;
 }
 
 .unselectedSkill:hover,
